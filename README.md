@@ -12,6 +12,22 @@ CSI 31			Assignments for Weeks 8 & 9
  
 	a) Do this for one employee and print out the person’s weekly pay.  
 
+Rohan's Prototype:
+'''
+def weekly_P():
+    hours = eval(print('hours worked: '))
+    H_rate = eval(print('pay rate: '))
+
+    pay = hours * H_rate
+
+    if hours > 40:
+        pay += ( hours - 40 ) * H_rate * 1.5
+        
+    print('your pay is: ',pay)
+
+weekly_P()
+'''
+
 	b) Do this in a loop and accumulate the total payroll for the week -- [payroll = 0 # 
 	    initialize it]; as you calculate each person’s pay, add it to payroll [payroll = payroll + 
 	    pay].
